@@ -20,10 +20,14 @@ _In brief, this project shows the utilization of basic implementation of object 
   _For the tests, refer to the testFunctions.js file_
 
 1. First Test
-  Test:""
-  Describe:
-  Code:
-  Expected Output:
+  Test:"It should calculate the cost per topping"
+  Describe: Pizza.prototype.cost = function(){}
+  Code: 
+    + Pizza.prototype.cost = function(){
+      let toppings = [3,3,3]
+      let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping
+      let toppingTotal = toppings.reduce(toppingSum)
+  Expected Output: 9
 
 2. Second Test
   Test:""

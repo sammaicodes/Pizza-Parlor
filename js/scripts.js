@@ -10,8 +10,8 @@ Pizza.prototype.cost = function(){
   //small = 15 dolls + extra toppings
   //medium = 20 dolls + extra toppings
   //large = 27 dolls + extra toppings
-  
-  
+    let element = this.toppings;
+    let toppingCost = (rackUp, currentTopping) => rackUp + currentTopping
 }
 
 //UI Logic
