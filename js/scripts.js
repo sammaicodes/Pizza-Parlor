@@ -5,9 +5,13 @@ function Pizza(toppings, size){
 }
 
 Pizza.prototype.cost = function(){
-  //small = 15
-  //medium = 20
-  //large = 27
+  //Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+  //extra topping = 3 dolls
+  //small = 15 dolls + extra toppings
+  //medium = 20 dolls + extra toppings
+  //large = 27 dolls + extra toppings
+  
+  
 }
 
 //UI Logic
@@ -25,7 +29,7 @@ $(document).ready(function(){
     }else if(medium === true){
       size = 20;
     }else{
-      size = 27
+      size = 27;
     }
 
     console.log(size)
