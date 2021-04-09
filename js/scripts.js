@@ -14,16 +14,17 @@ Pizza.prototype.cost = function(){
     let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping
     let toppingTotal = choices.reduce(toppingSum)
 
-    let currentSize = this.size
+    let sizeChoice = this.size
     let sizePrice;
-    if (small === true){
+    if (sizeChoice === "small"){
       sizePrice = 15;
-    }else if(medium === true){
+    }else if(sizeChoice === "medium"){
       sizePrice = 20;
     }else{
       sizePrice = 27;
     }
     return sizePrice + toppingTotal
+    console.log(sizePrice + toppingTotal)
 }
 
 //UI Logic
@@ -35,21 +36,24 @@ $(document).ready(function(){
     let medium = $("#medium")[0].selected;
     let large = $("#large")[0].selected;
 
-    // let size;
-    // if (small === true){
-    //   size = 15;
-    // }else if(medium === true){
-    //   size = 20;
-    // }else{
-    //   size = 27;
-    // }
-    // console.log(size)
+    let sizeChoice;
+    if (small === true){
+      sizeChoice = "small";
+    }else if(medium === true){
+      sizeChoice = "medium";
+    }else{
+      sizeChoice = "large";
+    }
+    // console.log(sizeChoice)
     const allToppings = []
     $("input:checkbox[name=toppings]:checked").each(function() {
       allToppings.push(parseInt($(this).val()));   
     });
     // console.log(allToppings)
-    let lunch = new Pizza(a,b)
+    let lunch = new Pizza(allToppings, sizeChoice)
+    lunch.cost();
+    console.log(lunch.cost())
+    console.log(lunch.size)
 
   })
 })
