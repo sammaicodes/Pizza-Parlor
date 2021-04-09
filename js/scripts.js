@@ -19,11 +19,23 @@ $(document).ready(function(){
     let medium = $("#medium")[0].selected;
     let large = $("#large")[0].selected;
 
+    let size;
+    if (small === true){
+      size = 15;
+    }else if(medium === true){
+      size = 20;
+    }else{
+      size = 27
+    }
 
+    console.log(size)
 
-
+    const allToppings = []
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      allToppings.push(parseInt($(this).val()));
+      
+    });
+    console.log(allToppings)
 
   })
-  
-
 })
