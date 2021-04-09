@@ -10,8 +10,20 @@ Pizza.prototype.cost = function(){
   //small = 15 dolls + extra toppings
   //medium = 20 dolls + extra toppings
   //large = 27 dolls + extra toppings
-    let element = this.toppings;
-    let toppingCost = (rackUp, currentTopping) => rackUp + currentTopping
+    let choices = this.toppings;
+    let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping
+    let toppingTotal = choices.reduce(toppingSum)
+
+    let currentSize = this.size
+    let sizePrice;
+    if (small === true){
+      sizePrice = 15;
+    }else if(medium === true){
+      sizePrice = 20;
+    }else{
+      sizePrice = 27;
+    }
+    return sizePrice + toppingTotal
 }
 
 //UI Logic
@@ -23,23 +35,21 @@ $(document).ready(function(){
     let medium = $("#medium")[0].selected;
     let large = $("#large")[0].selected;
 
-    let size;
-    if (small === true){
-      size = 15;
-    }else if(medium === true){
-      size = 20;
-    }else{
-      size = 27;
-    }
-
-    console.log(size)
-
+    // let size;
+    // if (small === true){
+    //   size = 15;
+    // }else if(medium === true){
+    //   size = 20;
+    // }else{
+    //   size = 27;
+    // }
+    // console.log(size)
     const allToppings = []
     $("input:checkbox[name=toppings]:checked").each(function() {
-      allToppings.push(parseInt($(this).val()));
-      
+      allToppings.push(parseInt($(this).val()));   
     });
-    console.log(allToppings)
+    // console.log(allToppings)
+    let lunch = new Pizza(a,b)
 
   })
 })

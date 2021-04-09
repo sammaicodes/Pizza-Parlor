@@ -31,8 +31,8 @@ _In brief, this project shows the utilization of basic implementation of object 
   Expected Output: 9
 
 2. Second Test
-  Test:""
-  Describe:
+  Test:"It should return the total including the cost per size and toppings."
+  Describe:Pizza.prototype.cost = function(){}
   Code:
   Expected Output:
 
