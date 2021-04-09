@@ -11,13 +11,14 @@
 * _HTML_
 * _CSS_
 * _GitBash_
+* _jQuery_
+* _JavaScript_
 
 ## Description
 
 _In brief, this project shows the utilization of basic implementation of object oriented JavaScript _
 
 ## Specifications, Test-Driven Development (TDD)
-  _For the tests, refer to the testFunctions.js file_
 
 1. First Test
   Test:"It should calculate the cost per topping"
@@ -35,24 +36,6 @@ _In brief, this project shows the utilization of basic implementation of object 
   Describe:Pizza.prototype.cost = function(){}
   Code: Select "Large" and "Green Zebra Tomatatoes"
   Expected Output: 30
-
-3. Third Test
-  Test:""
-  Describe:
-  Code:
-  Expected Output:
-
-4. Fourth Test
-  Test:""
-  Describe:
-  Code:
-  Expected Output:
-
-5. Fifth Test
-  Test:""
-  Describe:
-  Code:
-  Expected Output:
 
 ## Setup/Installation Requirements
 
@@ -73,5 +56,3 @@ _In brief, this project shows the utilization of basic implementation of object 
 ## License
 
 _MIT &copy; 2021 Sammai Gutierrez_
-
-## Contact Information

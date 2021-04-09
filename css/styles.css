@@ -9,4 +9,9 @@ body{
 }
 .text-center{
   color: antiquewhite;
+  font-family: cursive;
+
+}
+.form-check{
+  color: orange;
 }
