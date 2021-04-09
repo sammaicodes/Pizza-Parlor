@@ -21,21 +21,21 @@ _In brief, this project shows the utilization of basic implementation of object 
 ## Specifications, Test-Driven Development (TDD)
 
 1. First Test
-  Test:"It should calculate the cost per topping"
-  Describe: Pizza.prototype.cost = function(){}
-  Code: 
-    + Pizza.prototype.cost = function(){
-        let toppings = [3,3,3]
-        let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping
-        let toppingTotal = toppings.reduce(toppingSum)
-      }
-  Expected Output: 9
+    Test:"It should calculate the cost per topping"
+    Describe: Pizza.prototype.cost = function(){}
+    Code: 
+      Pizza.prototype.cost = function(){
+        let toppings = [3,3,3];
+        let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping;
+        let toppingTotal = toppings.reduce(toppingSum);
+       }
+    Expected Output: 9
 
 2. Second Test
-  Test:"It should return the total including the cost per size and toppings."
-  Describe:Pizza.prototype.cost = function(){}
-  Code: Select "Large" and "Green Zebra Tomatatoes"
-  Expected Output: 30
+    Test:"It should return the total including the cost per size and toppings."
+    Describe:Pizza.prototype.cost = function(){}
+    Code: Select "Large" and "Green Zebra Tomatatoes"
+    Expected Output: 30
 
 ## Setup/Installation Requirements
 
