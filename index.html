@@ -10,11 +10,41 @@
 <body>
   <div class="container">
     <h1>Pizza Parlor</h1>
-    <p></p>
-
-    <button class="btn btn-success" id="green">Green</button>
-    <button class="btn btn-warning" id="yellow">Yellow</button>
-    <button class="btn btn-danger" id="red">Red</button>
+    <br>
+    <form class="OrderOnline">
+    <div class="form-check">
+      <label for="size">Pick a size</label>
+      <select id="size">
+        <option id="small">Small</option>
+        <option id="medium">Medium</option>
+        <option id="large">Large</option>
+      </select>
+    </div>
+    <br>
+    <p>Select as many toppings as you want:</p>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="toppings" value="10" id="garnish1"/>
+      <label class="form-check-label" for="garnish1"> Mushrooms </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="toppings" value="10" id="garnish2"/>
+      <label class="form-check-label" for="garnish2"> Onions </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="toppings" value="10" id="garnish3"/>
+      <label class="form-check-label" for="garnish3"> Venison </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="toppings" value="10" id="garnish4"/>
+      <label class="form-check-label" for="garnish4"> Green Zebra Tomaoes </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="toppings" value="10" id="garnish5"/>
+      <label class="form-check-label" for="garnish5"> Pear </label>
+    </div>
+    <br>
+    <button class="btn btn-warning" id="yellow">Checkout</button>
+    </form>
   </div>
 </body>
 </html>

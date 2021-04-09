@@ -11,3 +11,19 @@ Pizza.prototype.cost = function(){
 }
 
 //UI Logic
+$(document).ready(function(){
+  $("form.orderOnline").submit(function(event){
+    event.preventDefault();
+
+    let small = $("#small")[0].selected;
+    let medium = $("#medium")[0].selected;
+    let large = $("#large")[0].selected;
+
+
+
+
+
+  })
+  
+
+})
