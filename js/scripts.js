@@ -23,8 +23,7 @@ Pizza.prototype.cost = function(){
     }else{
       sizePrice = 27;
     }
-    return sizePrice + toppingTotal
-    console.log(sizePrice + toppingTotal)
+    return sizePrice + toppingTotal;
 }
 
 //UI Logic
@@ -50,10 +49,12 @@ $(document).ready(function(){
       allToppings.push(parseInt($(this).val()));   
     });
     // console.log(allToppings)
-    let lunch = new Pizza(allToppings, sizeChoice)
-    lunch.cost();
-    console.log(lunch.cost())
-    console.log(lunch.size)
-
+    let lunch = new Pizza(allToppings, sizeChoice);
+    let total = lunch.cost();
+    // console.log(lunch.cost())
+    // console.log(lunch.size)  
+    $('.showCost').text(total);
+    $('.showSize').text(lunch.size);
+    $('#results').show();
   })
 })

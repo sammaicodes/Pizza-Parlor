@@ -33,8 +33,8 @@ _In brief, this project shows the utilization of basic implementation of object 
 2. Second Test
   Test:"It should return the total including the cost per size and toppings."
   Describe:Pizza.prototype.cost = function(){}
-  Code:
-  Expected Output:
+  Code: Select "Large" and "Green Zebra Tomatatoes"
+  Expected Output: 30
 
 3. Third Test
   Test:""
