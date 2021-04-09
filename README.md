@@ -14,9 +14,40 @@
 
 ## Description
 
-_In brief, this project shows the utilization of basic structure and implementation of _
+_In brief, this project shows the utilization of basic implementation of object oriented JavaScript _
 
-_You may access this project at https://sammaicodes.github.io/First-Friday-Project/_
+## Specifications, Test-Driven Development (TDD)
+  _For the tests, refer to the testFunctions.js file_
+
+1. First Test
+  Test:""
+  Describe:
+  Code:
+  Expected Output:
+
+2. Second Test
+  Test:""
+  Describe:
+  Code:
+  Expected Output:
+
+3. Third Test
+  Test:""
+  Describe:
+  Code:
+  Expected Output:
+
+4. Fourth Test
+  Test:""
+  Describe:
+  Code:
+  Expected Output:
+
+5. Fifth Test
+  Test:""
+  Describe:
+  Code:
+  Expected Output:
 
 ## Setup/Installation Requirements
 
