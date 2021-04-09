@@ -1,3 +1,7 @@
 #results{
   display: none;
 }
+body{
+  background-image: url(https://cdn.tasteatlas.com/images/dishes/785295d4ab6f4f0bab43d5fcf2e123b6.jpg?mw=1300);
+  font-size: larger;
+}

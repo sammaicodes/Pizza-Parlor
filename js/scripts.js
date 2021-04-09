@@ -5,11 +5,6 @@ function Pizza(toppings, size){
 }
 
 Pizza.prototype.cost = function(){
-  //Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
-  //extra topping = 3 dolls
-  //small = 15 dolls + extra toppings
-  //medium = 20 dolls + extra toppings
-  //large = 27 dolls + extra toppings
     let choices = this.toppings;
     let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping
     let toppingTotal = choices.reduce(toppingSum)
@@ -43,16 +38,12 @@ $(document).ready(function(){
     }else{
       sizeChoice = "large";
     }
-    // console.log(sizeChoice)
     const allToppings = []
     $("input:checkbox[name=toppings]:checked").each(function() {
       allToppings.push(parseInt($(this).val()));   
     });
-    // console.log(allToppings)
     let lunch = new Pizza(allToppings, sizeChoice);
-    let total = lunch.cost();
-    // console.log(lunch.cost())
-    // console.log(lunch.size)  
+    let total = lunch.cost();  
     $('.showCost').text(total);
     $('.showSize').text(lunch.size);
     $('#results').show();
