@@ -8,10 +8,16 @@ body{
   font-weight: bold;
 }
 .text-center{
-  color: antiquewhite;
+  background-image: linear-gradient(to left, red, white, rgb(5, 238, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: cursive;
-
+  font-size: 700%;
 }
-.form-check{
-  color: orange;
+.btn{
+ font-weight: bold;
+ font-size: large;
+ background-image: linear-gradient(to left, red, white, rgb(5, 238, 5));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
