@@ -27,10 +27,12 @@ _In brief, this project shows the utilization of basic implementation of object 
     Describe: Pizza.prototype.cost = function(){}
     
     Code: 
-    
       Pizza.prototype.cost = function(){
+      
         let toppings = [3,3,3];
+        
         let toppingSum = (rackUp, currentTopping) => rackUp + currentTopping;
+        
         let toppingTotal = toppings.reduce(toppingSum);
        }
     Expected Output: 9
